@@ -32,8 +32,6 @@ public:
 	virtual void enableRealTimeSimulation(bool enableRealTimeSim);
 	virtual bool isRealTimeSimulationEnabled() const;
 
-	virtual void reportNotifications();
-
 	//bool	supportsJointMotor(class btMultiBody* body, int linkIndex);
 
 	

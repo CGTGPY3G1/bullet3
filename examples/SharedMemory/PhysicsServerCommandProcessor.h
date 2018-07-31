@@ -155,7 +155,6 @@ public:
 	virtual void replayLogCommand(char* bufferServerToClient, int bufferSizeInBytes );
 
 	//logging of object states (position etc)
-	virtual void reportNotifications();
 	void tickPlugins(btScalar timeStep, bool isPreTick);
 	void logObjectStates(btScalar timeStep);
 	void processCollisionForces(btScalar timeStep);
@@ -174,9 +173,6 @@ public:
 
 	virtual const btQuaternion& getVRTeleportOrientation() const;
 	virtual void setVRTeleportOrientation(const btQuaternion& vrTeleportOrn);
-
-private:
-	void addTransformChangedNotifications();
 };
 
 #endif //PHYSICS_SERVER_COMMAND_PROCESSOR_H
